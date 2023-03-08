@@ -21,17 +21,18 @@ body {
 
 .grid-footer-1 {
     width: 100vw;
-    gap: 50px;
-    grid-template-areas:
-		"footer-campo-1 footer-campo-3 footer-campo-5 footer-campo-7 footer-campo-midia-social"
-		"footer-campo-2 footer-campo-4 footer-campo-6 footer-campo-8 .";
+    grid-row-gap: 10px;
+    grid-column-gap: 50px;
+    padding: 50px 0px 50px 0px; /*top, right, bottom, left
+    grid-template-areas: "1 3 5 7 9"
+                         "2 4 6 8 .";*/
     justify-content: center;
-    align-items: center;
+    align-items: start;
     background: rgb(53,174,208);
     background: linear-gradient(90deg, rgba(53,174,208,1) 0%, rgba(53,174,208,0.773546918767507) 100%);
 }
 h1 {
-font-family: kumbhSansLight;
+font-family: kumbhSansLigh t;
 color: #ffffff;
 }
 p {
@@ -41,4 +42,79 @@ p {
 .titulo {
   font-family: kumbhSansMedium;
   color: #ffffff;
+}
+
+.footer-campo-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.footer-campo-2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.footer-campo-3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.footer-campo-4 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.footer-campo-5 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.footer-campo-6 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.footer-campo-7 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.footer-campo-8 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.footer-campo-midia-social {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.footer-criador {
+  display: grid;
+  grid-column-start: 1 ;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  align-items: end;
+  justify-items: end;
+  border-top: #dbdbdb solid 1px;
+}
+.fa-brands {
+  font-size: 30px;
+  padding-right: 10px;
+}
+.fa-facebook {
+  color: #1771E6;
+}
+.fa-twitter {
+  color: #00A2E4;
 }
