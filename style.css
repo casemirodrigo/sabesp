@@ -1,0 +1,44 @@
+@font-face {
+  font-family: kumbhSansLight;
+  src: url(fontes/static/KumbhSans-Light.ttf);
+}
+
+@font-face {
+  font-family: kumbhSansMedium;
+  src: url(fontes/static/KumbhSans-Medium.ttf);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+	display: grid;
+}
+
+.grid-footer-1 {
+    width: 100vw;
+    gap: 50px;
+    grid-template-areas:
+		"footer-campo-1 footer-campo-3 footer-campo-5 footer-campo-7 footer-campo-midia-social"
+		"footer-campo-2 footer-campo-4 footer-campo-6 footer-campo-8 .";
+    justify-content: center;
+    align-items: center;
+    background: rgb(53,174,208);
+    background: linear-gradient(90deg, rgba(53,174,208,1) 0%, rgba(53,174,208,0.773546918767507) 100%);
+}
+h1 {
+font-family: kumbhSansLight;
+color: #ffffff;
+}
+p {
+  font-family: kumbhSansLight;
+  color: #ebebeb;
+}
+.titulo {
+  font-family: kumbhSansMedium;
+  color: #ffffff;
+}
