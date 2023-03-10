@@ -24,20 +24,20 @@ body {
     grid-template-areas: "grid1 grid3 grid5 grid7 grid9"
                          "grid2 grid4 grid6 grid8 ."
                          "grid10 grid10 grid10 grid10 grid10";
-    background: rgb(53,174,208);
-    background: linear-gradient(90deg, rgba(53,174,208,1) 0%, rgba(53,174,208,0.773546918767507) 100%);
+    background-color: #ffffff;
+    justify-content: center;
   }
 h1 { 
 font-family: kumbhSansLigh t;
-color: #ffffff;
+color: #3AB0DE;
 }
 p {
   font-family: kumbhSansLight;
-  color: #ebebeb;
+  color: #8ecde5;
 }
 .titulo {
   font-family: kumbhSansMedium;
-  color: #ffffff;
+  color: #28a6d8;
 }
 
 /*
@@ -148,8 +148,17 @@ p {
 }
 .footer-criador {
   display: grid;
-  border-top: #000000 solid 1px;
+  /*border-top: #000000 solid 1px;*/
   grid-area: grid10;
   justify-items: end;
-  padding: 0px 20px 0px 0px;
+  background-color: #ffffff;
+  margin-right: 50px;
 }
+/*
+.footer-campo-1, .footer-campo-2,
+.footer-campo-3, .footer-campo-4,
+.footer-campo-5, .footer-campo-6,
+.footer-campo-7, .footer-campo-8,
+.footer-campo-9 {
+}
+*/
